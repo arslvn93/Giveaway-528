@@ -1,0 +1,74 @@
+
+/* Reset default styles from the template */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Global section spacing */
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Consistent background elements */
+.bg-decoration {
+  position: absolute;
+  border-radius: 9999px;
+  opacity: 0.2;
+  filter: blur(40px);
+  z-index: -1;
+}
+
+/* Consistent animation durations */
+.transition-standard {
+  transition-duration: 300ms;
+}
+
+/* Elevation styles for cards/elements */
+.elevation-1 {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.elevation-2 {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.elevation-3 {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Consistent hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar for a more polished look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6b656;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c4a536;
+}
